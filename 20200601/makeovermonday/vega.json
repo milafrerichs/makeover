@@ -1,0 +1,303 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Slope graph for Makeover Monday Jan 6th 2020",
+  "mark": "line",
+  "encoding": {
+    "facet": {
+      "field": "sport",
+      "type": "ordinal",
+      "columns": 11,
+      "title": "Sport",
+      "sort": {
+        "op": "max",
+        "field": "viewer_percentage"
+      }
+    },
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "scale": {
+        "padding": 0.5
+      },
+      "title": "Year"
+    },
+    "y": {
+      "field": "viewer_percentage",
+      "type": "quantitative",
+      "title": "%"
+    },
+    "color": {
+      "field": "inc_decr",
+      "type": "nominal",
+      "scale": {"range": ["gray", "red", "green"]}
+    }
+  },
+  "data": {
+   "values": [
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Football",
+        "viewer_percentage": 37
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Basketball",
+        "viewer_percentage": 11
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Gymnastics",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Motocross",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Ice/Figure skating",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Rodeo",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Track and field",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Fishing",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Swimming",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Wrestling",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Bowling",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "incr",
+        "sport": "Other",
+        "viewer_percentage": 5
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Baseball",
+        "viewer_percentage": 9
+      },
+      {
+        "year": 2017,
+        "inc_decr": "incr",
+        "sport": "None",
+        "viewer_percentage": 15
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "No opinion",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2017,
+        "inc_decr": "incr",
+        "sport": "Soccer",
+        "viewer_percentage": 7
+      },
+      {
+        "year": 2017,
+        "inc_decr": "incr",
+        "sport": "Ice hockey",
+        "viewer_percentage": 4
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Auto racing",
+        "viewer_percentage": 2
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Tennis",
+        "viewer_percentage": 2
+      },
+      {
+        "year": 2017,
+        "inc_decr": "decr",
+        "sport": "Golf",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2017,
+        "inc_decr": "incr",
+        "sport": "Volleyball",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2017,
+        "inc_decr": "",
+        "sport": "Boxing",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Football",
+        "viewer_percentage": 37
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Basketball",
+        "viewer_percentage": 13
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Gymnastics",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Motocross",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Ice/Figure skating",
+        "viewer_percentage": 4
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Rodeo",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Track and field",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Fishing",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Swimming",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Wrestling",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Bowling",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2014,
+        "inc_decr": "incr",
+        "sport": "Other",
+        "viewer_percentage": 4
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Baseball",
+        "viewer_percentage": 10
+      },
+      {
+        "year": 2014,
+        "inc_decr": "incr",
+        "sport": "None",
+        "viewer_percentage": 12
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "No opinion",
+        "viewer_percentage": 1
+      },
+      {
+        "year": 2014,
+        "inc_decr": "incr",
+        "sport": "Soccer",
+        "viewer_percentage": 2
+      },
+      {
+        "year": 2014,
+        "inc_decr": "incr",
+        "sport": "Ice hockey",
+        "viewer_percentage": 3
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Auto racing",
+        "viewer_percentage": 5
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Tennis",
+        "viewer_percentage": 2
+      },
+      {
+        "year": 2014,
+        "inc_decr": "decr",
+        "sport": "Golf",
+        "viewer_percentage": 2
+      },
+      {
+        "year": 2014,
+        "inc_decr": "incr",
+        "sport": "Volleyball",
+        "viewer_percentage": 0
+      },
+      {
+        "year": 2014,
+        "inc_decr": "",
+        "sport": "Boxing",
+        "viewer_percentage": 1
+      }
+    ]
+  }
+}
